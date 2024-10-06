@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div id="dropZone" class="drop-zone">
+        Drag and drop a file here
+        <p class="p1">OR</p>
+        <button id="uploadBtn">Select and Upload File</button>
+    </div>
+
+    <input type="file" id="fileInput" accept=".txt" style="display: none;">
+
+
+    <div id="mainDiv">
+        <div id="div1">
+            <div class="wordDiv">
+                <p id="wordParagraph"></p>
+            </div>
+            <div class="definitionDiv">
+                <p id="definitionP"></p>
+            </div>
+        </div>
+        <div class="div2">
+            <button id="skipButton">Skip</button>
+            <input type="text" id="vocabInput" placeholder="Type the definition">
+            <button id="notButton">Do not ask again</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Make sure your file is a txt file.</h2>
+        <h2>Make sure your file is in this format:</h2>
+        <p>For each word, you must have 1 line</p>
+        <p>In every line, you should start with your word. Right after your word, add a colon (:). 
+            Lastly, put your definition after the colon
+        </p>
+        <p>Example txt format:</p>
+    </div>
+    
+    <div class="ImgContainer">
+        <img src="vocImg.png" alt="Image cannot be shown" class="exampleImage">
+    </div>
+    
+    <div class="container">
+        <h2>Controls:</h2>
+        <p>Press skip if you want to skip the word without seeing its definition</p>
+        <p>Press do not ask again if you do not want to see the word again</p>
+        <p>Type your word into the input box and click enter to enter your guess</p>
+        <p>Click the blue box which containt your word in order to see the definition of that word</p>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
